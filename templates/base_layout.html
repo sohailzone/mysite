@@ -1,0 +1,13 @@
+{% load static from staticfiles %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div id="wrapper">
+    <a href="{% url 'articles:list' %}"><img width="100px" height="100px" src="{% static 'if_apple.png' %}" alt="" /></a>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

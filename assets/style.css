@@ -1,0 +1,25 @@
+body{
+  /*background-image: url('abstract-blur-bright-day-237907.jpg');*/
+  background-color: lightgreen;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+a{
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+h1{
+  color: black;
+  font-size: 25px;
+}
+h2{
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
+  color: gray;
+}

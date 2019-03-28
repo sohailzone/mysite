@@ -11,3 +11,4 @@ Following modules are included:
 2. Articles : 
 • Articles List
 • Article Details
+• Create Article

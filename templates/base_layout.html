@@ -8,12 +8,18 @@
     <a href="{% url 'articles:list' %}"><img width="100px" height="100px" src="{% static 'if_apple.png' %}" alt="" /></a>
     <nav>
       <ul>
+        {% if user.is_authenticated %}
         <li>
           <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
             {% csrf_token %}
             <button type="submit">Logout</button>
           </form>
         </li>
+          <li><a href="{% url 'articles:create' %}">Create Article</a></li>
+        {% else %}
+          <li><a href="{% url 'accounts:login' %}">Login</a></li>
+            <li><a href="{% url 'accounts:signup' %}">SignUp</a></li>
+        {% endif %}
       </ul>
     </nav>
 
